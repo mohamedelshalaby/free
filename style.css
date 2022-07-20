@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* header h1 logo and navegition */
+
+header{
+      margin: 0;
+      padding: 0;
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content:space-between;
+       background-color: gray;
+       position: fixed;
+       z-index: 999;
+}
+
+header .logo h1{
+    color: rgba(255, 0, 0, 0.544);
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold; 
+    padding: 30px 100px;
+         
+}
+header .navegition ul{
+    padding: 30px 100px;
+
+       
+}
+.navegition ul li{
+      display: inline-block;
+}
+
+.navegition ul li a{
+     color:rgba(255, 0, 0, 0.544) ;
+     font-size: 30px;
+     text-decoration: none;
+     font-weight: bold;
+     padding: 0 20px;
+     transition: all 0.8s;
+}
+
+.navegition ul li a:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 2px rgba(255, 0, 0, 0.544);
+}
+
+/* section background photo and pra*/
+
+.maine {
+       width: 100%;
+       height:95vh;
+       background-attachment: fixed;
+        
+}
+
+    
+
+
+.maine::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(
+        90deg,
+        rgb(14 14 20 / 86%) 0%,
+        rgb(8 8 9 / 80%) 20%
+        ),
+        url("plistine.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: herobg 3s ease-in;
+        background-attachment: fixed;
+
+             
+}
+
+.pragraphe{
+       padding: 200px 100px;
+}
+
+
+.maine .pragraphe h2{
+    
+    color:rgba(255, 0, 0, 0.544) ;
+    font-size: 100px;
+    font-weight: bold;
+    
+}
+
+.maine .pragraphe p{
+    color: white;
+    font-size: 20px;
+
+}
+
+.maine .pragraphe input{
+    width: 200px;
+    height: 60px;
+    border: none;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color:rgba(255, 0, 0, 0.544) ;
+    color: white;
+    margin: 40px 0;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.maine .pragraphe input:hover{
+    background-color: transparent;
+    border: 4px solid rgba(255, 0, 0, 0.544) ;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.iconeall{
+    background-color: #EEE;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+}
+
+.iconeall h3{
+    font-size: 40px;
+    color:rgba(255, 0, 0, 0.693) ;
+    text-align: center;
+}
+.iconeall .icone1{
+                margin-top: 70px;
+                margin-left: 20px;
+                 padding: 50px 20px;
+                 cursor: pointer;
+                 transition: 0.8s ease;
+                 box-shadow: 2px 2px 1px rgba(255, 0, 0, 0.238);
+}
+
+.iconeall .icon
+{
+    text-align: center;
+}
+
+.iconeall .icon img{
+         width:80 ;
+         height: 80px;
+}
+
+.iconeall .icone1:hover{
+    transform: scale(1.1);
+}
+
+.contactall{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color:rgba(238, 238, 238, 0.363);
+}
+
+.contactall h4{
+    font-size: 40px;
+    color:rgba(255, 0, 0, 0.693) ;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.contactall .contact1{
+    box-shadow: -2px -2px 2px rgba(255, 0, 0, 0.693);
+
+    padding: 20px 20px;
+    margin: 100px 50px;
+}
+.contact1 .con {
+    text-align: center;
+    
+}
+
+.con img{
+    width: 70px;
+    height: 70px;
+}
+.contact1 .pra{
+    padding: 20px 0;
+    
+}
+
+footer{
+    background-color: #EEE;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p a{
+    text-decoration: none;
+    color:rgba(255, 0, 0, 0.693) ;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1024px){
+
+    header{
+        height: 80px;
+    }
+
+    header .logo h1{
+        font-size: 25px;
+        padding: 10px 0px;
+             
+    }
+    header .navegition ul{
+        padding: 30px 0px;
+    
+           
+    }
+    .navegition ul li a{
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0 5px;
+        transition: all 0.8s;
+   }
+
+    .iconeall{
+        flex-direction: column;
+    }
+   .contactall{
+    flex-direction: column;
+   }
+
+  
+   
+}
+
+@media  screen and (max-width:400px) {
+    .maine{
+        height: 900px;
+    }
+
+    .maine::after{
+        height: 170vh;
+    }
+}
+
